@@ -1,0 +1,202 @@
+[
+  {
+    "question": "How can I book a flight?",
+    "answer": "You can book a flight by visiting our website and entering your travel details on the homepage."
+  },
+  {
+    "question": "Can I cancel my flight?",
+    "answer": "Yes, you can cancel your flight under the 'Manage Booking' section."
+  },
+  {
+    "question": "How do I get my boarding pass?",
+    "answer": "You can download your boarding pass after check-in via the website or app."
+  },
+  {
+    "question": "How early should I arrive at the airport?",
+    "answer": "Arrive at least 2 hours before domestic and 3 hours before international flights."
+  },
+  {
+    "question": "What ID is required for check-in?",
+    "answer": "A valid government-issued photo ID like passport, Aadhaar, or driver\u2019s license is required."
+  },
+  {
+    "question": "How can I reschedule my flight?",
+    "answer": "You can reschedule through 'Manage Booking' or call customer care."
+  },
+  {
+    "question": "Can I select my seat?",
+    "answer": "Yes, seat selection is available during or after booking, often for an extra charge."
+  },
+  {
+    "question": "What is the baggage allowance?",
+    "answer": "Baggage allowance varies by airline and class. Check your booking details for specifics."
+  },
+  {
+    "question": "What if my flight is delayed?",
+    "answer": "We\u2019ll notify you via SMS/email. You can also check real-time status on our website."
+  },
+  {
+    "question": "Can I carry liquids in hand luggage?",
+    "answer": "Yes, but only in containers of 100ml or less in a transparent zip-lock bag."
+  },
+  {
+    "question": "How can I check flight status?",
+    "answer": "Use the 'Flight Status' section on the website or app."
+  },
+  {
+    "question": "Is food included in the ticket?",
+    "answer": "Some airlines offer complimentary meals, others may charge. Check your ticket details."
+  },
+  {
+    "question": "Can I change the name on my ticket?",
+    "answer": "Name changes are usually not allowed. Please contact support for help."
+  },
+  {
+    "question": "What if I miss my flight?",
+    "answer": "Contact customer service immediately. Rebooking options depend on the airline\u2019s policy."
+  },
+  {
+    "question": "Can I bring a stroller or wheelchair?",
+    "answer": "Yes, strollers and wheelchairs are allowed and often free of charge."
+  },
+  {
+    "question": "Do I need to print my ticket?",
+    "answer": "No, an e-ticket and valid ID are sufficient for most airlines."
+  },
+  {
+    "question": "What is web check-in?",
+    "answer": "Web check-in allows you to check-in online and avoid airport queues."
+  },
+  {
+    "question": "When does check-in open?",
+    "answer": "Online check-in usually opens 24\u201348 hours before the flight."
+  },
+  {
+    "question": "Can I carry medicines in cabin luggage?",
+    "answer": "Yes, but carry a doctor\u2019s prescription for liquid medicines."
+  },
+  {
+    "question": "Is there a student discount?",
+    "answer": "Some airlines offer student discounts. Select the \u2018Student\u2019 option while booking."
+  },
+  {
+    "question": "Can I travel with my pet?",
+    "answer": "Pets are allowed on certain flights. Contact the airline for exact policies."
+  },
+  {
+    "question": "What happens if I enter wrong passport number?",
+    "answer": "You must contact customer care immediately to correct the information."
+  },
+  {
+    "question": "Do infants need a ticket?",
+    "answer": "Yes, but they usually travel on the lap of an adult at a reduced fare."
+  },
+  {
+    "question": "What\u2019s the refund policy?",
+    "answer": "Refunds depend on the fare type and timing of cancellation."
+  },
+  {
+    "question": "Can I pay using EMI?",
+    "answer": "Yes, EMI options are available with selected banks at checkout."
+  },
+  {
+    "question": "Do you offer group bookings?",
+    "answer": "Yes, you can request group booking quotes via our support team."
+  },
+  {
+    "question": "Is Wi-Fi available on board?",
+    "answer": "Some airlines offer in-flight Wi-Fi. Check your airline\u2019s amenities list."
+  },
+  {
+    "question": "Can I get a GST invoice?",
+    "answer": "Yes, provide your GSTIN during booking to receive a GST invoice."
+  },
+  {
+    "question": "Can I add extra baggage after booking?",
+    "answer": "Yes, you can add baggage under 'Manage Booking' or at the airport."
+  },
+  {
+    "question": "Do you offer travel insurance?",
+    "answer": "Yes, travel insurance can be added during the booking process."
+  },
+  {
+    "question": "How do I redeem my travel points?",
+    "answer": "Log in to your account and apply points during checkout if eligible."
+  },
+  {
+    "question": "Is there a senior citizen discount?",
+    "answer": "Yes, select the \u2018Senior Citizen\u2019 option while booking to see offers."
+  },
+  {
+    "question": "Can I upgrade to business class?",
+    "answer": "Yes, upgrades are available at extra cost based on seat availability."
+  },
+  {
+    "question": "Can I check-in luggage at the gate?",
+    "answer": "No, checked baggage must be dropped at the airline counter."
+  },
+  {
+    "question": "What documents are needed for international travel?",
+    "answer": "Passport, visa, and sometimes additional documents like COVID certificates."
+  },
+  {
+    "question": "Can I get a refund for a non-refundable ticket?",
+    "answer": "Non-refundable tickets may offer partial refunds or credits. Check the fare rules."
+  },
+  {
+    "question": "What if I booked the wrong destination?",
+    "answer": "Contact support immediately. Changes may be possible for a fee."
+  },
+  {
+    "question": "How long is my ticket valid?",
+    "answer": "Usually, tickets are valid only for the booked date unless it\u2019s an open ticket."
+  },
+  {
+    "question": "Can I change my travel date?",
+    "answer": "Yes, date changes are allowed but may incur charges."
+  },
+  {
+    "question": "How can I contact customer support?",
+    "answer": "Use our helpline number, live chat, or email support on our Contact Us page."
+  },
+  {
+    "question": "Are children allowed to travel alone?",
+    "answer": "Yes, with special procedures under the airline\u2019s unaccompanied minor policy."
+  },
+  {
+    "question": "Can I get assistance at the airport?",
+    "answer": "Yes, request special assistance during booking or call support."
+  },
+  {
+    "question": "What is PNR number?",
+    "answer": "PNR (Passenger Name Record) is your booking reference code."
+  },
+  {
+    "question": "Can I change my mobile number after booking?",
+    "answer": "Yes, go to 'Manage Booking' or contact support to update contact info."
+  },
+  {
+    "question": "What if my baggage is lost?",
+    "answer": "Report to the airline\u2019s baggage counter immediately. They\u2019ll initiate a trace and compensation process."
+  },
+  {
+    "question": "How do I know my flight gate?",
+    "answer": "Check your boarding pass or the airport display boards for gate info."
+  },
+  {
+    "question": "Can I cancel only one passenger from a group booking?",
+    "answer": "Yes, you can cancel individual passengers under 'Manage Booking'."
+  },
+  {
+    "question": "Is vaccination mandatory for travel?",
+    "answer": "Requirements vary by country. Please check the airline or government website."
+  },
+  {
+    "question": "Do I need to reconfirm my booking?",
+    "answer": "No, unless specifically mentioned. Most bookings are confirmed instantly."
+  },
+  {
+    "question": "What happens if my connecting flight is missed?",
+    "answer": "If booked under one PNR, the airline will accommodate you on the next available flight."
+  }
+]

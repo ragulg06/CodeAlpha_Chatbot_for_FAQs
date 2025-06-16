@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FlightBooker</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#flights">Flights</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h1>Welcome to FlightBooker</h1>
+            <p>Your trusted partner for seamless travel experiences</p>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-plane"></i>
+                <h3>Active Flights</h3>
+                <p>1,234</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>Happy Travelers</h3>
+                <p>50,000+</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-globe"></i>
+                <h3>Destinations</h3>
+                <p>150+</p>
+            </div>
+        </div>
+
+        <div class="featured-flights">
+            <h2>Popular Routes</h2>
+            <div class="flight-cards">
+                <div class="flight-card">
+                    <div class="flight-route">
+                        <div class="city">New York</div>
+                        <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                        <div class="city">London</div>
+                    </div>
+                    <div class="flight-details">
+                        <span><i class="fas fa-clock"></i> 7h 30m</span>
+                        <span><i class="fas fa-dollar-sign"></i> 499</span>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="flight-route">
+                        <div class="city">Tokyo</div>
+                        <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                        <div class="city">Sydney</div>
+                    </div>
+                    <div class="flight-details">
+                        <span><i class="fas fa-clock"></i> 9h 45m</span>
+                        <span><i class="fas fa-dollar-sign"></i> 799</span>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="flight-route">
+                        <div class="city">Paris</div>
+                        <div class="plane-icon"><i class="fas fa-plane"></i></div>
+                        <div class="city">Dubai</div>
+                    </div>
+                    <div class="flight-details">
+                        <span><i class="fas fa-clock"></i> 6h 15m</span>
+                        <span><i class="fas fa-dollar-sign"></i> 599</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChat()">
+        <img src="chatbot_png.png" alt="Chat with us" class="chatbot-icon-img">
+        <div class="chatbot-pulse"></div>
+    </div>
+
+    <!-- Chatbot Frame -->
+    <div id="chatbot-frame" class="hidden">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>Flight Booking Assistant</span>
+            </div>
+            <button class="close-btn" onclick="toggleChat()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="chatbot-content">
+            <div id="chatbot-loading" class="hidden">
+                <div class="loading-spinner"></div>
+                <p>Connecting to assistant...</p>
+            </div>
+            <div id="chatbot-error" class="hidden">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Unable to connect to the assistant. Please try again later.</p>
+            </div>
+            <iframe id="chatbot-iframe" src="about:blank" frameborder="0" allow="microphone; camera"></iframe>
+        </div>
+    </div>
+
+    <script>
+        let isConnecting = false;
+
+        function toggleChat() {
+            const frame = document.getElementById('chatbot-frame');
+            const icon = document.getElementById('chatbot-icon');
+            
+            if (frame.classList.contains('hidden')) {
+                frame.classList.remove('hidden');
+                frame.classList.add('slide-in');
+                connectChatbot();
+            } else {
+                frame.classList.add('hidden');
+                frame.classList.remove('slide-in');
+            }
+        }
+
+        function connectChatbot() {
+            if (isConnecting) return;
+            
+            const iframe = document.getElementById('chatbot-iframe');
+            const loading = document.getElementById('chatbot-loading');
+            const error = document.getElementById('chatbot-error');
+            
+            loading.classList.remove('hidden');
+            error.classList.add('hidden');
+            iframe.classList.add('hidden');
+            isConnecting = true;
+
+            // Try to connect to the chatbot
+            fetch('http://127.0.0.1:7862')
+                .then(response => {
+                    if (response.ok) {
+                        iframe.src = 'http://127.0.0.1:7862';
+                        iframe.onload = () => {
+                            loading.classList.add('hidden');
+                            iframe.classList.remove('hidden');
+                            isConnecting = false;
+                        };
+                    } else {
+                        throw new Error('Server not responding');
+                    }
+                })
+                .catch(() => {
+                    loading.classList.add('hidden');
+                    error.classList.remove('hidden');
+                    isConnecting = false;
+                });
+        }
+
+        // Check server status when page loads
+        window.onload = function() {
+            fetch('http://127.0.0.1:7862')
+                .then(response => {
+                    if (!response.ok) {
+                        document.getElementById('chatbot-icon').style.display = 'none';
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('chatbot-icon').style.display = 'none';
+                });
+        };
+    </script>
+</body>
+</html>

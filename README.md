@@ -44,20 +44,24 @@ pip install -r requirements.txt
 ```
 
 ## Running the Application
+1. Training the chatbot for answering FAQs:
+````bash
+python training.py
+```` 
 
-1. Start the chatbot server:
+3. Start the chatbot server:
 ```bash
 python chatbot_ui.py
 ```
 This will start the Gradio server on http://127.0.0.1:7862
 
-2. In a new terminal window, start the web server:
+3. In a new terminal window, start the web server:
 ```bash
 python -m http.server 8000
 ```
 This will serve the web interface on http://localhost:8000
 
-3. Open your web browser and navigate to:
+4. Open your web browser and navigate to:
 ```
 http://localhost:8000
 ```
